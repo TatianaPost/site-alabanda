@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<title>Alabanda HTML Template v1.0</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="shortcut icon" href="flat-ui/images/favicon.ico">
+
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/animations.css">
+
+		<link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+		<script src="js/modernizr.custom.js"></script>
+
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+		<script src="../../flat-ui/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+
+	<div id="off-canvas-container" class="off-canvas-container">
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- Header Start -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<header id="header" class="header at-padding-large-top at-padding-large-bottom cbp-af-header">	 
+			<div class="container">  
+				<!-- Logo -->
+				<a href="index.html" id="logo">
+					<img class="logo" src="img/logo.png" alt="Alabanda Html Theme"/>
+				</a>
+				<!-- Navigation Button -->
+				<div class="navigation-btn">
+					<!-- content push wrapper -->
+					<div class="off-canvas-pusher">
+						<div class="off-canvas-content"><!-- this is the wrapper for the content -->
+							<div class="off-canvas-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+								<div id="off-canvas-trigger-effects">
+									<button class="btn buzz-out" type="button" data-effect="off-canvas-effect"><i class="fa fa-bars"></i></button>
+								</div>
+							</div><!-- /off-canvas-content-inner -->
+						</div><!-- /off-canvas-content -->
+					</div><!-- /off-canvas-pusher -->
+				</div>
+				
+			</div>
+		</header>
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- Header End -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- Off Canvas Start -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<nav class="off-canvas-menu off-canvas-effect">
+			<div class="canvas-menu-fix">
+				<!-- SignIn and SignUp Buttons -->
+				<div class="login-signup">
+					<!-- inser more links here -->
+					 <a class="cd-signin" href="#0">Sign in</a> 
+					 <a class="cd-signup" href="#0">Sign up</a> 
+				 
+				</div>
+				<!-- Off Canvas Content -->
+				<h3>Main Menu</h3>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="features.html">Features</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="portfolios.html">Portfolio</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- Off Canvas End -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- Sign in Sign Up Popup Start-->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<div class="cd-user-modal">
+			<div class="cd-user-modal-container"> <!-- this is the container wrapper -->
+				<ul class="cd-switcher">
+					<li><a href="#0">Sign in</a></li>
+					<li><a href="#0">New account</a></li>
+				</ul>
+
+				<div id="cd-login"> <!-- log in form -->
+					<form class="cd-form">
+						<p class="fieldset">
+							<label class="image-replace cd-email" for="signin-email">E-mail</label>
+							<input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+							<span class="cd-error-message">Error message here!</span>
+						</p>
+
+						<p class="fieldset">
+							<label class="image-replace cd-password" for="signin-password">Password</label>
+							<input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Password">
+							<a href="#0" class="hide-password">Hide</a>
+							<span class="cd-error-message">Error message here!</span>
+						</p>
+
+						<p class="fieldset">
+							<div class="option-container">
+								<input type="checkbox" id="remember-me" name="option[]" checked>
+								<label for="remember-me">Remember me</label>
+							</div>
+						</p>
+
+						<p class="fieldset">
+							<input class="full-width btn" type="submit" value="Login">
+						</p>
+					</form>
+					
+					<p class="cd-form-bottom-message"><a href="#0">Forgot your password?</a></p>
+					<!-- <a href="#0" class="cd-close-form">Close</a> -->
+				</div> <!-- cd-login -->
+
+				<div id="cd-signup"> <!-- sign up form -->
+					<form class="cd-form">
+						<p class="fieldset">
+							<label class="image-replace cd-username" for="signup-username">Username</label>
+							<input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
+							<span class="cd-error-message">Error message here!</span>
+						</p>
+
+						<p class="fieldset">
+							<label class="image-replace cd-email" for="signup-email">E-mail</label>
+							<input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+							<span class="cd-error-message">Error message here!</span>
+						</p>
+
+						<p class="fieldset">
+							<label class="image-replace cd-password" for="signup-password">Password</label>
+							<input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password">
+							<a href="#0" class="hide-password">Hide</a>
+							<span class="cd-error-message">Error message here!</span>
+						</p>
+
+						<p class="fieldset">
+							<div class="option-container">
+								<input type="checkbox" name="option[]" id="accept-terms">
+								<label for="accept-terms">I agree to the <a href="#modal-popup" class="modal">Terms</a></label>
+								<div id="modal-popup" class="white-popup-block mfp-hide">
+									<h3>Our Terms</h3>
+									<p>You won't be able to dismiss this by usual means (escape or
+									click button), but you can close it programatically based on
+									user choices or actions.</p>
+									<p><a class="popup-modal-dismiss" href="#">Dismiss</a></p>
+							      </div>
+							</div>
+						</p>
+
+						<p class="fieldset">
+							<input class="full-width has-padding btn-secondary" type="submit" value="Create account">
+						</p>
+					</form>
+
+					<!-- <a href="#0" class="cd-close-form">Close</a> -->
+				</div> <!-- cd-signup -->
+
+				<div id="cd-reset-password"> <!-- reset password form -->
+					<p class="cd-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+
+					<form class="cd-form">
+						<p class="fieldset">
+						 
+							<label class="image-replace cd-email" for="reset-email">E-mail</label>
+							<input class="full-width has-padding has-border" name="option[]" id="reset-email" type="email" placeholder="E-mail">
+							<span class="cd-error-message">Error message here!</span>
+
+						</p>
+
+						<p class="fieldset">
+							<input class="full-width has-padding btn-light" type="submit" value="Reset password">
+						</p>
+					</form>
+
+					<p class="cd-form-bottom-message"><a href="#0">Back to log-in</a></p>
+				</div> <!-- cd-reset-password -->
+				<a href="#0" class="cd-close-form">Close</a>
+			</div> <!-- cd-user-modal-container -->
+		</div> 
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- Sign in Sign Up Popup End-->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- Main Start -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<main class="main">
+			<div class="blog-list">
+				<header class="bg-light at-padding-large-top at-margin-large-bottom">
+					<div class="page-header container">
+						<h1>Blog</h1>
+						<p class="lead">Hi, welcome to our blog.</p> 
+					</div>
+				</header>
+				<div class="container">
+					<nav class="breadcrumb">
+						<a href="#">breadcrumb</a> /
+						<a href="#">Lorem link</a> / 
+						<a href="#">Dolor link two</a> /
+						<a href="#">Here is a link</a> /
+						<strong>Active Link</strong>
+					</nav>
+					<div class="row">
+						<div class="span-9 col">
+							<article class="image">
+
+								<!-- ARTICLE IMAGE : begin -->
+								<div class="article-image">
+									<a href="blog-item.html"><img src="img/blog/blog-1.jpg" alt=""></a>
+								</div>
+								<!-- ARTICLE IMAGE : end -->
+
+								<!-- ARTICLE HEADER : begin -->
+								<header class="article-header">
+									<span class="article-date">May 7, 2014</span>
+									<h2 class="article-title"><a href="blog-item.html">This is image article</a></h2>
+								</header>
+								<!-- ARTICLE HEADER : end -->
+
+								<!-- ARTICLE CONTENT : begin -->
+								<div class="article-content">
+									<p class="lead">Far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+									<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+								</div>
+								<!-- ARTICLE CONTENT : end -->
+
+								<!-- ARTICLE FOOTER : begin -->
+								<footer class="article-footer">
+									<ul class="article-info">
+										<li class="author"><i class="fa fa-user"></i>John Doe</li>
+										<li class="tags">
+											<span><a href="#">cheddar</a></span>
+											<span><a href="#">swiss</a></span>
+											<span><a href="#">havarti</a></span>
+											<span><a href="#">gouda</a></span>
+											<span><a href="#">manchego</a></span>
+										</li>
+										<li class="comments"><a href="#"><i class="fa fa-comment"></i>4 comments</a></li>
+									</ul>
+									<p class="article-more"><a href="blog-item.html" class="btn btn-primary">Read More</a></p>
+								</footer>
+								<!-- ARTICLE FOOTER : end -->
+							</article>
+							<article class="video">
+								<!-- ARTICLE VIDEO : begin -->
+								<div class="article-video">
+									<div class="embed-video">
+										<iframe src="http://player.vimeo.com/video/18855836" height="315" width="560" allowfullscreen="" frameborder="0"></iframe>
+									</div>
+								</div>
+								<!-- ARTICLE VIDEO : end -->
+
+								<!-- ARTICLE HEADER : begin -->
+								<header class="article-header">
+									<span class="article-date">May 6, 2014</span>
+									<h2 class="article-title"><a href="blog-item.html">Video article looks like this</a></h2>
+								</header>
+								<!-- ARTICLE HEADER : end -->
+
+								<!-- ARTICLE CONTENT : begin -->
+								<div class="article-content">
+									<p class="lead">Because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia.</p>
+									<p>Put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy.</p>
+								</div>
+								<!-- ARTICLE CONTENT : end -->
+
+								<!-- ARTICLE FOOTER : begin -->
+								<footer class="article-footer">
+									<ul class="article-info">
+										<li class="author"><i class="fa fa-user"></i>John Doe</li>
+										<li class="tags">
+											<span><a href="#">cheddar</a></span>
+											<span><a href="#">swiss</a></span>
+											<span><a href="#">havarti</a></span>
+											<span><a href="#">gouda</a></span>
+											<span><a href="#">manchego</a></span>
+										</li>
+										<li class="comments"><a href="#"><i class="fa fa-comment"></i>4 comments</a></li>
+									</ul>
+									<p class="article-more"><a href="blog-item.html" class="btn btn-primary">Read More</a></p>
+								</footer>
+								<!-- ARTICLE FOOTER : end -->
+							</article>
+							<article class="audio">
+
+								<!-- ARTICLE AUDIO : begin -->
+								<div class="article-audio">
+									<div class="embed-audio">
+										<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/59051244"></iframe>
+									</div>
+								</div>
+								<!-- ARTICLE AUDIO : end -->
+
+								<!-- ARTICLE HEADER : begin -->
+								<header class="article-header">
+									<span class="article-date">May 5, 2014</span>
+									<h2 class="article-title"><a href="blog-item.html">Example of audio article</a></h2>
+								</header>
+								<!-- ARTICLE HEADER : end -->
+
+								<!-- ARTICLE CONTENT : begin -->
+								<div class="article-content">
+									<p class="lead">That where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.</p>
+									<p>But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their projects again and again. And if she hasn’t been rewritten, then they are still using her.</p>
+								</div>
+								<!-- ARTICLE CONTENT : end -->
+
+								<!-- ARTICLE FOOTER : begin -->
+								<footer class="article-footer">
+									<ul class="article-info">
+										<li class="author"><i class="fa fa-user"></i>John Doe</li>
+										<li class="tags">
+											<span><a href="#">cheddar</a></span>
+											<span><a href="#">swiss</a></span>
+											<span><a href="#">havarti</a></span>
+											<span><a href="#">gouda</a></span>
+											<span><a href="#">manchego</a></span>
+										</li>
+										<li class="comments"><a href="#"><i class="fa fa-comment"></i>4 comments</a></li>
+									</ul>
+									<p class="article-more"><a href="blog-item.html" class="btn btn-primary">Read More</a></p>
+								</footer>
+								<!-- ARTICLE FOOTER : end -->
+							</article>
+						</div>
+						<div class="span-3 col">
+							<aside id="sidebar">
+								<form action="/" class="search">
+									<fieldset>
+										<input type="text" placeholder="Search" />
+										<input type="submit" value="Go" />
+									</fieldset>
+								</form>
+
+								<div class="sidebar-widget sidebar-links">
+									<h3 class="widget-title">Categories</h3>
+									<div class="widget-content">
+										<ul>
+											<li><a href="#">Beauty</a></li>
+											<li><a href="#">Cosmetics</a></li>
+											<li><a href="#">Fashion</a></li>
+											<li><a href="#">Travel</a></li>
+											<li><a href="#">Treatments</a></li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="sidebar-widget sidebar-articles">
+									<h3 class="widget-title">Popular Articles</h3>
+									<div class="widget-content">
+										<ul>
+											<li>
+												<h4 class="article-title"><a href="blog-image.html">Link to example of image article</a></h4>
+												<p class="article-date">May 7, 2014</p>
+											</li>
+											<li>
+												<h4 class="article-title"><a href="blog-video.html">Check out this video article</a></h4>
+												<p class="article-date">May 6, 2014</p>
+											</li>
+											<li>
+												<h4 class="article-title"><a href="blog-audio.html">Audio article example here</a></h4>
+												<p class="article-date">May 5, 2014</p>
+											</li>
+										</ul>
+									</div>
+								</div>	
+
+								<div class="sidebar-widget sidebar-tags">
+									<h3 class="widget-title">Popular Tags</h3>
+									<div class="widget-content">
+										<ol class="tags">
+											<li><a href="#">cheddar</a></li>
+											<li><a href="#">swiss</a></li>
+											<li><a href="#">havarti</a></li>
+											<li><a href="#">gouda</a></li>
+											<li><a href="#">manchego</a></li>
+										</ol>
+									</div>
+								</div>
+							</aside>
+						</div>
+					</div>
+					<nav class="page">
+						<ul>
+							<li class="page-prev"><a href="#">← Prev</a></li>
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li class="page-next"><a href="#">Next →</a></li>
+						</ul>
+					</nav>	
+				</div>
+			</div>
+		</main>
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- Main End -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- Footer Start -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<footer class="footer at-padding-large-top at-padding-large-bottom bg-primary">
+			<div class="footer-logo"><img src="img/footer-logo.png" alt="Alabanda Footer Logo" /></div>
+			<div class="container">
+				<h3 class="title">We’d love to hear all about your project. <br/>Get in touch with us.</h3>
+				<div class="row">
+					<div class="social-links">
+						<div class="span-3 col">
+							<a href="#" class="pulse"><i class="fa fa-twitter"></i></a>
+						</div>
+						<div class="span-3 col">
+							<a href="#" class="pulse"><i class="fa fa-facebook"></i></a>
+						</div>
+						<div class="span-3 col">
+							<a href="#" class="pulse"><i class="fa fa-pinterest"></i></a>
+						</div>
+						<div class="span-3 col">
+							<a href="#" class="pulse"><i class="fa fa-google-plus"></i></a>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="row">
+					 
+					<div class="span-3 col">
+						<h3 class="module-title">Contact Us</h3>
+						<address>
+							<strong>Twitter, Inc.</strong><br>
+							795 Folsom Ave, Suite 600<br>
+							San Francisco, CA 94107<br>
+							<abbr title="Phone">P:</abbr> (123) 456-7890<br>
+							<strong>aristotheme@gmail.com</strong>
+						</address>
+						 
+					</div>
+					<div class="span-3 col">
+						<h3 class="module-title">Help</h3>
+						<ul>
+							<li><a class="scale" href="#">What is Alabanda?</a></li>
+							<li><a class="scale" href="#">How to install it?</a></li>
+							<li><a class="scale" href="#">How to customize it?</a></li>
+						</ul>
+					</div>
+					<div class="span-3 col">
+					 	<h3 class="module-title">Menu</h3>
+					 	<ul>
+							<li><a class="scale" href="#">Terms & Conditions</a></li>
+							<li><a class="scale" href="#">Terms of Use</a></li>
+							<li><a class="scale" href="#">FAQ</a></li>
+						</ul>
+					</div>
+					<div class="span-3 col">
+					 	<h3 class="module-title">About Us</h3>
+					 	<p>Turnip greens <a class="scale" href="#">yarrow ricebean</a> rutabaga endive cauliflower. </p>
+					 	<p><a class="scale" href="http://aristotheme.com/themes/alabanda-sketch-3-bussiness-template" rel="nofollow">More Detail →</a></p>
+					</div>
+ 
+				</div>	
+			</div>
+		</footer>
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- Footer End -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- Copyright Start -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<section id="copyright" class="at-padding-top at-padding-bottom bg-light">
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="span-8 col">
+							<small>Copyright © 2014 <a href="http://www.aristotheme.com">AristoTheme</a></small>
+						</div>
+						<div class="span-4 col">
+							<small class="at-float-right"><a href="javascript:void(0)" class="backtotop float">Back to Top <i class="fa fa-angle-up"></i></a></small>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- CopyrightEnd -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		
+	</div><!-- /st-container -->
+
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- Script Embed Start -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+		<script src="js/jquery.js"></script>
+		<script src="js/classie.js"></script>
+
+		<!-- Parallax -->
+		<script src="js/appear.js"></script>
+		<script src="js/stellar.js"></script>
+
+		<!-- Testimonials -->
+		<script src="js/owl.carousel.min.js"></script>
+
+		<!-- Sidebar Menu -->
+		<script src="js/sidebarEffects.js"></script>
+
+		<!-- Login SignUp Form -->
+		<script src="js/login.js"></script>
+
+		<!-- Lightbox -->
+		<script src="js/jquery.magnific-popup.min.js"></script>
+
+		<!-- Loading -->
+		<script src="js/pace.min.js"></script>
+
+		<!-- Header Fixed -->
+		<script src="js/animatedHeader.min.js"></script>
+
+		<!-- Special Alabanda Scripts -->
+		<script src="js/script.js"></script>
+
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
