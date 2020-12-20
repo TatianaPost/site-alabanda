@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<title>Alabanda HTML Template v1.0</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/animations.css">
+
+		<link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+		<script src="js/modernizr.custom.js"></script>
+
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+		<script src="../../flat-ui/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+
+	<div id="off-canvas-container" class="off-canvas-container">
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- Header Start -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<header id="header" class="header at-padding-large-top at-padding-large-bottom cbp-af-header">	 
+			<div class="container">  
+				<!-- Logo -->
+				<a href="index.html" id="logo">
+					<img class="logo" src="img/logo.png" alt="Alabanda Html Theme"/>
+				</a>
+				<!-- Navigation Button -->
+				<div class="navigation-btn">
+					<!-- content push wrapper -->
+					<div class="off-canvas-pusher">
+						<div class="off-canvas-content"><!-- this is the wrapper for the content -->
+							<div class="off-canvas-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+								<div id="off-canvas-trigger-effects">
+									<button class="btn buzz-out" type="button" data-effect="off-canvas-effect"><i class="fa fa-bars"></i></button>
+								</div>
+							</div><!-- /off-canvas-content-inner -->
+						</div><!-- /off-canvas-content -->
+					</div><!-- /off-canvas-pusher -->
+				</div>
+				
+			</div>
+		</header>
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- Header End -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- Off Canvas Start -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<nav class="off-canvas-menu off-canvas-effect">
+			<div class="canvas-menu-fix">
+				<!-- SignIn and SignUp Buttons -->
+				<div class="login-signup">
+					<!-- inser more links here -->
+					 <a class="cd-signin" href="#0">Sign in</a> 
+					 <a class="cd-signup" href="#0">Sign up</a> 
+				 
+				</div>
+				<!-- Off Canvas Content -->
+				<h3>Main Menu</h3>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="features.html">Features</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="portfolios.html">Portfolio</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- Off Canvas End -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- Sign in Sign Up Popup Start-->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<div class="cd-user-modal">
+			<div class="cd-user-modal-container"> <!-- this is the container wrapper -->
+				<ul class="cd-switcher">
+					<li><a href="#0">Sign in</a></li>
+					<li><a href="#0">New account</a></li>
+				</ul>
+
+				<div id="cd-login"> <!-- log in form -->
+					<form class="cd-form">
+						<p class="fieldset">
+							<label class="image-replace cd-email" for="signin-email">E-mail</label>
+							<input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+							<span class="cd-error-message">Error message here!</span>
+						</p>
+
+						<p class="fieldset">
+							<label class="image-replace cd-password" for="signin-password">Password</label>
+							<input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Password">
+							<a href="#0" class="hide-password">Hide</a>
+							<span class="cd-error-message">Error message here!</span>
+						</p>
+
+						<p class="fieldset">
+							<div class="option-container">
+								<input type="checkbox" id="remember-me" name="option[]" checked>
+								<label for="remember-me">Remember me</label>
+							</div>
+						</p>
+
+						<p class="fieldset">
+							<input class="full-width btn" type="submit" value="Login">
+						</p>
+					</form>
+					
+					<p class="cd-form-bottom-message"><a href="#0">Forgot your password?</a></p>
+					<!-- <a href="#0" class="cd-close-form">Close</a> -->
+				</div> <!-- cd-login -->
+
+				<div id="cd-signup"> <!-- sign up form -->
+					<form class="cd-form">
+						<p class="fieldset">
+							<label class="image-replace cd-username" for="signup-username">Username</label>
+							<input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
+							<span class="cd-error-message">Error message here!</span>
+						</p>
+
+						<p class="fieldset">
+							<label class="image-replace cd-email" for="signup-email">E-mail</label>
+							<input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+							<span class="cd-error-message">Error message here!</span>
+						</p>
+
+						<p class="fieldset">
+							<label class="image-replace cd-password" for="signup-password">Password</label>
+							<input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password">
+							<a href="#0" class="hide-password">Hide</a>
+							<span class="cd-error-message">Error message here!</span>
+						</p>
+
+						<p class="fieldset">
+							<div class="option-container">
+								<input type="checkbox" name="option[]" id="accept-terms">
+								<label for="accept-terms">I agree to the <a href="#modal-popup" class="modal">Terms</a></label>
+								<div id="modal-popup" class="white-popup-block mfp-hide">
+									<h3>Our Terms</h3>
+									<p>You won't be able to dismiss this by usual means (escape or
+									click button), but you can close it programatically based on
+									user choices or actions.</p>
+									<p><a class="popup-modal-dismiss" href="#">Dismiss</a></p>
+							      </div>
+							</div>
+						</p>
+
+						<p class="fieldset">
+							<input class="full-width has-padding btn-secondary" type="submit" value="Create account">
+						</p>
+					</form>
+
+					<!-- <a href="#0" class="cd-close-form">Close</a> -->
+				</div> <!-- cd-signup -->
+
+				<div id="cd-reset-password"> <!-- reset password form -->
+					<p class="cd-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+
+					<form class="cd-form">
+						<p class="fieldset">
+						 
+							<label class="image-replace cd-email" for="reset-email">E-mail</label>
+							<input class="full-width has-padding has-border" name="option[]" id="reset-email" type="email" placeholder="E-mail">
+							<span class="cd-error-message">Error message here!</span>
+
+						</p>
+
+						<p class="fieldset">
+							<input class="full-width has-padding btn-light" type="submit" value="Reset password">
+						</p>
+					</form>
+
+					<p class="cd-form-bottom-message"><a href="#0">Back to log-in</a></p>
+				</div> <!-- cd-reset-password -->
+				<a href="#0" class="cd-close-form">Close</a>
+			</div> <!-- cd-user-modal-container -->
+		</div> 
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- Sign in Sign Up Popup End-->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- Main Slider Start -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<section id="slider">
+			<div id="main-slider" class="main-slider main-slider-fullwidth fxSoftPulse">
+				<ul class="itemwrap">
+					<li class="current">
+						<img src="img/slides/slide-1.jpg" alt="img06"/>
+						<div class="slider-content">
+							<!-- Content -->
+							<h1 class="title">Makes You Curıous</h1>
+							<div class="line"></div>
+							<p class="lead">Full service digital agency with a passion for performance marketing and solutions that inspire curiosity.</p>
+							<a class="btn btn-large pulse" href="#">Read More</a>
+						</div>
+					</li>
+					<li>
+						<img src="img/slides/slide-2.jpg" alt="img07"/>
+						<div class="slider-content">
+							<!-- Content -->
+							<h1 class="title">Alabanda</h1>
+							<div class="line"></div>
+							<p class="lead">Your Favourite Creative Agency</p>
+							<a class="btn btn-large pulse" href="#">Read More</a>
+						</div>
+					</li>
+					<li>
+						<img src="img/slides/slide-3.jpg" alt="img08"/>
+						<div class="slider-content">
+							<!-- Content -->
+							<h1 class="title">Experience The Good Stuff</h1>
+							<div class="line"></div>
+							<p class="lead">We Craft Stuff by Hand, One Pixel at a time</p>
+							<a class="btn btn-large pulse" href="#">Read More</a>
+						</div>
+					</li>
+				</ul>
+
+				<nav class="arrows">
+					<a class="next" href="#"></a>
+					<a class="prev" href="#"></a>
+				</nav>
+			</div>
+		</section>
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- Main Slider End -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- Promo Start -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<section id="promo" class="bg-primary at-padding-large-top at-padding-large-bottom">
+			<div class="promo">
+				<div class="row">	
+					<div class="container"> 
+						<div class="span-8 col">
+							<h3>Have you fallen in love with Alabanda?</h3>
+							<p>Asymmetrical quinoa stumptown blog, YOLO XOXO trust fund selfies aesthetic dreamcatcher Helvetica 8-bit.</p>
+						</div>
+						<div class="span-4 col">
+							<a class="btn-light btn-large at-margin-top at-float-right pulse" href="#">Buy It Now</a>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</section>
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- Promo End -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- Services Start -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<section id="services">
+			<div class="services">
+				<div class="container">
+					<div class="row">
+						<div class="span-4 col">
+							<div class="services-left">
+								<div class="our-services" id="our-services">
+						                <div class="middle">
+						                    <h3 class="title">Our services</h3>
+						                    <p class="intro-text">From an idea to an unforgetable and measurable digital experience.</p>
+						                    <div class="line"></div>
+						                    <p class="link-braces">Integrating flawless production, cutting edge <a class="scale" href="#">technology</a> and meticulous performance measuring,</p>
+						                </div>
+						            </div>
+							</div>
+						</div>
+						<div class="span-8 col">
+							<div class="services-right">
+								<ul class="services-grid">
+									<li>
+										<a href="#">
+											<div class="services-item">
+												<div class="middle">
+													<i class="fa fa-paper-plane-o"></i>
+													<h3 class="services-title">Strategy</h3>
+													<p class="services-intro-text">Turnip greens yarrow ricebean rutabaga.</p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="services-item">
+												<div class="middle">
+													<i class="fa fa-bar-chart-o"></i>
+													<h3 class="services-title">Analytics</h3>
+													<p class="services-intro-text">Turnip greens yarrow ricebean rutabaga.</p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="services-item">
+												<div class="middle">
+													<i class="fa fa-umbrella"></i>
+													<h3 class="services-title">Social Media</h3>
+													<p class="services-intro-text">Turnip greens yarrow ricebean rutabaga.</p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="services-item">
+												<div class="middle">
+													<i class="fa fa-code"></i>
+													<h3 class="services-title">Development</h3>
+													<p class="services-intro-text">Turnip greens yarrow ricebean rutabaga.</p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="services-item">
+												<div class="middle">
+													<i class="fa fa-trophy"></i>
+													<h3 class="services-title">Content Production</h3>
+													<p class="services-intro-text">Turnip greens yarrow ricebean rutabaga.</p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="services-item">
+												<div class="middle">
+													<i class="fa fa-heart-o"></i>
+													<h3 class="services-title">Design & UX</h3>
+													<p class="services-intro-text">Turnip greens yarrow ricebean rutabaga.</p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="services-item">
+												<div class="middle">
+													<i class="fa fa-bomb"></i>
+													<h3 class="services-title">Digital Advertising</h3>
+													<p class="services-intro-text">Turnip greens yarrow ricebean rutabaga.</p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<div class="services-item">
+												<div class="middle">
+													<i class="fa fa-bullhorn"></i>
+													<h3 class="services-title">Products</h3>
+													<p class="services-intro-text">Turnip greens yarrow ricebean rutabaga.</p>
+												</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- Services End -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- Recent Works Start -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<section id="portfolios" class="parallax at-padding-large-top at-padding-large-bottom" data-stellar-background-ratio="0">
+			<div class="portfolios">
+				<h3 class="title">Latest Works</h3>
+				<div class="line"></div>
+				<div class="row">	
+					<div class="container"> 
+						<div class="span-3 col">
+							<div class="portfolios-box">
+								<div class="portfolios-box-content">
+									<div class="portfolios-box-wrapper">
+										<div>
+											<h4>Portfolio Title</h4>
+											<span class="icons">
+												<a class="lightbox" href="img/portfolios/portfolio-big-1.jpg" class="pulse"><i class="fa fa-search"></i></a> 
+												<a href="portfolio-item.html" class="pulse"><i class="fa fa-plus"></i></a>
+											</span>	
+										</div>				
+									</div>
+								</div>
+								<div class="portfolios-box-overlay magictime" data-hover="puffOut portfolio-back" data-return="tinUpIn">
+									<img src="img/portfolios/portfolio-1.jpg" alt="" />
+								</div>					
+							</div>
+						</div>
+						<div class="span-3 col">
+							<div class="portfolios-box">
+								<div class="portfolios-box-content">
+									<div class="portfolios-box-wrapper">
+										<div>
+											<h4>Portfolio Title</h4>
+											<span class="icons">
+												<a class="lightbox" href="img/portfolios/portfolio-big-2.jpg" class="pulse"><i class="fa fa-search"></i></a> 
+												<a href="portfolio-item.html" class="pulse"><i class="fa fa-plus"></i></a>
+											</span>	
+										</div>						
+									</div>
+								</div>
+								<div class="portfolios-box-overlay magictime" data-hover="puffOut portfolio-back" data-return="tinUpIn">
+									<img src="img/portfolios/portfolio-2.jpg" alt="" />
+								</div>					
+							</div>
+						</div>
+						<div class="span-3 col">
+							<div class="portfolios-box">
+								<div class="portfolios-box-content">
+									<div class="portfolios-box-wrapper">
+										<div>
+											<h4>Portfolio Title</h4>
+											<span class="icons">
+												<a class="lightbox" href="img/portfolios/portfolio-big-3.jpg" class="pulse"><i class="fa fa-search"></i></a>  
+												<a href="portfolio-item.html" class="pulse"><i class="fa fa-plus"></i></a>
+											</span>	
+										</div>						
+									</div>
+								</div>
+								<div class="portfolios-box-overlay magictime" data-hover="puffOut portfolio-back" data-return="tinUpIn">
+									<img src="img/portfolios/portfolio-3.jpg" alt="" />
+								</div>					
+							</div>
+						</div>
+						<div class="span-3 col">
+							<div class="portfolios-box">
+								<div class="portfolios-box-content">
+									<div class="portfolios-box-wrapper">
+										<div>
+											<h4>Portfolio Title</h4>
+											<span class="icons">
+												<a class="lightbox" href="img/portfolios/portfolio-big-4.jpg" class="pulse"><i class="fa fa-search"></i></a> 
+												<a href="portfolio-item.html" class="pulse"><i class="fa fa-plus"></i></a>
+											</span>	
+										</div>						
+									</div>
+								</div>
+								<div class="portfolios-box-overlay magictime" data-hover="puffOut portfolio-back" data-return="tinUpIn">
+									<img src="img/portfolios/portfolio-4.jpg" alt="" />
+								</div>						
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">	
+					<div class="container"> 
+						<div class="span-3 col">
+							<div class="portfolios-box">
+								<div class="portfolios-box-content">
+									<div class="portfolios-box-wrapper">
+										<div>
+											<h4>Portfolio Title</h4>
+											<span class="icons">
+												<a class="lightbox" href="img/portfolios/portfolio-big-1.jpg" class="pulse"><i class="fa fa-search"></i></a>  
+												<a href="portfolio-item.html" class="pulse"><i class="fa fa-plus"></i></a>
+											</span>	
+										</div>				
+									</div>
+								</div>
+								<div class="portfolios-box-overlay magictime" data-hover="puffOut portfolio-back" data-return="tinUpIn">
+									<img src="img/portfolios/portfolio-5.jpg" alt="" />
+								</div>					
+							</div>
+						</div>
+						<div class="span-3 col">
+							<div class="portfolios-box">
+								<div class="portfolios-box-content">
+									<div class="portfolios-box-wrapper">
+										<div>
+											<h4>Portfolio Title</h4>
+											<span class="icons">
+												<a class="lightbox" href="img/portfolios/portfolio-big-2.jpg" class="pulse"><i class="fa fa-search"></i></a> 
+												<a href="portfolio-item.html" class="pulse"><i class="fa fa-plus"></i></a>
+											</span>	
+										</div>						
+									</div>
+								</div>
+								<div class="portfolios-box-overlay magictime" data-hover="puffOut portfolio-back" data-return="tinUpIn">
+									<img src="img/portfolios/portfolio-6.jpg" alt="" />
+								</div>					
+							</div>
+						</div>
+						<div class="span-3 col">
+							<div class="portfolios-box">
+								<div class="portfolios-box-content">
+									<div class="portfolios-box-wrapper">
+										<div>
+											<h4>Portfolio Title</h4>
+											<span class="icons">
+												<a class="lightbox" href="img/portfolios/portfolio-big-3.jpg" class="pulse"><i class="fa fa-search"></i></a> 
+												<a href="portfolio-item.html" class="pulse"><i class="fa fa-plus"></i></a>
+											</span>	
+										</div>						
+									</div>
+								</div>
+								<div class="portfolios-box-overlay magictime" data-hover="puffOut portfolio-back" data-return="tinUpIn">
+									<img src="img/portfolios/portfolio-7.jpg" alt="" />
+								</div>					
+							</div>
+						</div>
+						<div class="span-3 col">
+							<div class="portfolios-box">
+								<div class="portfolios-box-content">
+									<div class="portfolios-box-wrapper">
+										<div>
+											<h4>Portfolio Title</h4>
+											<span class="icons">
+												<a class="lightbox" href="img/portfolios/portfolio-big-4.jpg" class="pulse"><i class="fa fa-search"></i></a> 
+												<a href="portfolio-item.html" class="pulse"><i class="fa fa-plus"></i></a>
+											</span>	
+										</div>						
+									</div>
+								</div>
+								<div class="portfolios-box-overlay magictime" data-hover="puffOut portfolio-back" data-return="tinUpIn">
+									<img src="img/portfolios/portfolio-8.jpg" alt="" />
+								</div>						
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- Recent Works End -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- Video Block Start -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<section id="video-block" class="at-padding-large-top at-padding-large-bottom">
+			<div class="video-block">
+				<div class="row">	
+					<div class="container"> 
+						<div class="span-4 col">
+							<img src="img/video-photo.jpg">
+						</div>
+
+						<div class="span-7 col offset-1">
+							<h3 class="title">Video Title</h3>
+							<div class="line"></div>
+							<p>Turnip greens <a class="scale" href="#">yarrow ricebean</a> rutabaga endive cauliflower. Kohlrabi radish okra azuki bean corn fava bean mustard tigernut broccoli and quinoa beets. Love cherries green heaven.</p>
+							<p>Pea horseradish azuki bean lettuce <a class="scale" href="#">avocado</a> asparagus okra. Kohlrabi radish okra azuki bean corn.</p>
+							<a class="btn btn-large wobble-horizontal popup-vimeo" href="http://vimeo.com/18855836">WATCH THE VIDEO</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- Video Block End -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- Latest News Start -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<section id="latest-news" class="at-padding-large-top at-padding-large-bottom bg-light">
+			<div class="latest-news grid-wrap">
+				<div class="container">
+					<h3 class="title">Latest News</h3>
+					<div class="line"></div>
+					<ul class="news-grid swipe-rotate" id="news-grid">
+						<li><a href="#"><img src="img/latest-news/news-1.jpg" alt="dummy"><h3>Lorem Ipsum available</h3></a></li>
+						<li><a href="#"><img src="img/latest-news/news-2.jpg" alt="dummy"><h3>Ultricies etiam primis</h3></a></li>
+						<li><a href="#"><img src="img/latest-news/news-3.jpg" alt="dummy"><h3>Elit amet consequat</h3></a></li>
+						<li><a href="#"><img src="img/latest-news/news-4.jpg" alt="dummy"><h3>Risus blandit et</h3></a></li>
+						<li><a href="#"><img src="img/latest-news/news-5.jpg" alt="dummy"><h3>Tempor mattis id et</h3></a></li>
+						<li><a href="#"><img src="img/latest-news/news-6.jpg" alt="dummy"><h3>Mauris volutpat pellentesque</h3></a></li>
+						<li><a href="#"><img src="img/latest-news/news-7.jpg" alt="dummy"><h3>Amet orci eget</h3></a></li>
+						<li><a href="#"><img src="img/latest-news/news-8.jpg" alt="dummy"><h3>Fermentum nonummy ac</h3></a></li>
+						<li><a href="#"><img src="img/latest-news/news-9.jpg" alt="dummy"><h3>Nibh dui pellentesque</h3></a></li>
+						<li><a href="#"><img src="img/latest-news/news-10.jpg" alt="dummy"><h3>Sed mi mi</h3></a></li>
+						<li><a href="#"><img src="img/latest-news/news-11.jpg" alt="dummy"><h3>Ultricies mattis massa</h3></a></li>
+						<li><a href="#"><img src="img/latest-news/news-12.jpg" alt="dummy"><h3>Tortor dui ut</h3></a></li>
+						<!--
+						<li><a href="#"><img src="img/latest-news/news-13.jpg" alt="dummy"><h3>Sed platea quisque</h3></a></li>
+						<li><a href="#"><img src="img/latest-news/news-14.jpg" alt="dummy"><h3>Pulvinar a mus</h3></a></li>
+						<li><a href="#"><img src="img/latest-news/news-15.jpg" alt="dummy"><h3>Aliquam vel amet</h3></a></li>
+						<li><a href="#"><img src="img/latest-news/news-16.jpg" alt="dummy"><h3>Orci id dapibus</h3></a></li>
+						<li><a href="#"><img src="img/latest-news/news-17.jpg" alt="dummy"><h3>Leo dolor eget </h3></a></li>
+						<li><a href="#"><img src="img/latest-news/news-18.jpg" alt="dummy"><h3>Nisl et sit</h3></a></li>
+						<li><a href="#"><img src="img/latest-news/news-19.jpg" alt="dummy"><h3>Dictum vestibulum at</h3></a></li>
+						<li><a href="#"><img src="img/latest-news/news-20.jpg" alt="dummy"><h3>Congue dapibus</h3></a></li>
+						<li><a href="#"><img src="img/latest-news/news-21.jpg" alt="dummy"><h3>Elit neque pulvinar</h3></a></li>
+						<li><a href="#"><img src="img/latest-news/news-22.jpg" alt="dummy"><h3>Nunc vitae nec</h3></a></li>
+						<li><a href="#"><img src="img/latest-news/news-23.jpg" alt="dummy"><h3>Duis quis augue</h3></a></li>
+						<li><a href="#"><img src="img/latest-news/news-24.jpg" alt="dummy"><h3>Eros erat imperdiet</h3></a></li>
+						<li><a href="#"><img src="img/latest-news/news-25.jpg" alt="dummy"><h3>Ornare at purus</h3></a></li>
+						<li><a href="#"><img src="img/latest-news/news-26.jpg" alt="dummy"><h3>Nec ultricies lorem</h3></a></li>
+						<li><a href="#"><img src="img/latest-news/news-27.jpg" alt="dummy"><h3>Pellentesque wisi sit</h3></a></li>
+						<li><a href="#"><img src="img/latest-news/news-28.jpg" alt="dummy"><h3>Et malesuada eu</h3></a></li>
+						<li><a href="#"><img src="img/latest-news/news-29.jpg" alt="dummy"><h3>Nec vel purus</h3></a></li>
+						<li><a href="#"><img src="img/latest-news/news-30.jpg" alt="dummy"><h3>Dolor et iusto</h3></a></li>
+						<li><a href="#"><img src="img/latest-news/news-31.jpg" alt="dummy"><h3>Sollicitudin vel lacus</h3></a></li>
+						<li><a href="#"><img src="img/latest-news/news-32.jpg" alt="dummy"><h3>Ut commodo congue</h3></a></li>
+						<li><a href="#"><img src="img/latest-news/news-33.jpg" alt="dummy"><h3>Dis lorem tincidunt</h3></a></li>
+						<li><a href="#"><img src="img/latest-news/news-34.jpg" alt="dummy"><h3>Congue auctor rutrum</h3></a></li>
+						<li><a href="#"><img src="img/latest-news/news-35.jpg" alt="dummy"><h3>Mauris massa velit</h3></a></li>
+						<li><a href="#"><img src="img/latest-news/news-36.jpg" alt="dummy"><h3>Laoreet eu nullam</h3></a></li>
+						<li><a href="#"><img src="img/latest-news/news-37.jpg" alt="dummy"><h3>Eleifend nunc nunc</h3></a></li>
+						<li><a href="#"><img src="img/latest-news/news-38.jpg" alt="dummy"><h3>Tristique arcu tristique</h3></a></li>
+						<li><a href="#"><img src="img/latest-news/news-39.jpg" alt="dummy"><h3>Mauris facilisis tempus</h3></a></li>
+						<li><a href="#"><img src="img/latest-news/news-40.jpg" alt="dummy"><h3>Porro vulputate cursus</h3></a></li>
+						-->
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- Latest News End -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- Testimonials Start -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<section id="testimonials" class="at-padding-large-top at-padding-large-bottom">
+			<div class="testimonials">
+				<div class="container">
+					<h3 class="title"><i class="fa fa-quote-right"></i></h3>
+					<div id="owl-quote" class="owl-carousel owl-theme">
+
+						<div class="item">
+							<h4 class="lead">"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."</h4>
+							<span class="quote-author"><strong> - John Lenon </strong> / CEO of Company </span>
+						</div>
+						<div class="item">
+							<h4 class="lead">“Thank for such a great template. The quality is awesome. so many features and you can create any website with this perfect solution”</h4>
+							<span class="quote-author"><strong> - Sara Jameson </strong> / Web Developer </span>
+						</div>
+						<div class="item">
+							<h4 class="lead">“The quality is awesome. so many features and you can create any website with this perfect solution”</h4>
+							<span class="quote-author"><strong> - Mark Fillips </strong> / Graphic Designer </span>
+						</div>
+					 
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- Testimonials End -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- Footer Start -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<footer class="footer at-padding-large-top at-padding-large-bottom bg-primary">
+			<div class="footer-logo"><img src="img/footer-logo.png" alt="Alabanda Footer Logo" /></div>
+			<div class="container">
+				<h3 class="title">We’d love to hear all about your project. <br/>Get in touch with us.</h3>
+				<div class="row">
+					<div class="social-links">
+						<div class="span-3 col">
+							<a href="#" class="pulse"><i class="fa fa-twitter"></i></a>
+						</div>
+						<div class="span-3 col">
+							<a href="#" class="pulse"><i class="fa fa-facebook"></i></a>
+						</div>
+						<div class="span-3 col">
+							<a href="#" class="pulse"><i class="fa fa-pinterest"></i></a>
+						</div>
+						<div class="span-3 col">
+							<a href="#" class="pulse"><i class="fa fa-google-plus"></i></a>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="row">
+					 
+					<div class="span-3 col">
+						<h3 class="module-title">Contact Us</h3>
+						<address>
+							<strong>Twitter, Inc.</strong><br>
+							795 Folsom Ave, Suite 600<br>
+							San Francisco, CA 94107<br>
+							<abbr title="Phone">P:</abbr> (123) 456-7890<br>
+							<strong>aristotheme@gmail.com</strong>
+						</address>
+						 
+					</div>
+					<div class="span-3 col">
+						<h3 class="module-title">Help</h3>
+						<ul>
+							<li><a class="scale" href="#">What is Alabanda?</a></li>
+							<li><a class="scale" href="#">How to install it?</a></li>
+							<li><a class="scale" href="#">How to customize it?</a></li>
+						</ul>
+					</div>
+					<div class="span-3 col">
+					 	<h3 class="module-title">Menu</h3>
+					 	<ul>
+							<li><a class="scale" href="#">Terms & Conditions</a></li>
+							<li><a class="scale" href="#">Terms of Use</a></li>
+							<li><a class="scale" href="#">FAQ</a></li>
+						</ul>
+					</div>
+					<div class="span-3 col">
+					 	<h3 class="module-title">About Us</h3>
+					 	<p>Turnip greens <a class="scale" href="#">yarrow ricebean</a> rutabaga endive cauliflower. </p>
+					 	<p><a class="scale" href="http://aristotheme.com/themes/alabanda-sketch-3-bussiness-template" rel="nofollow">More Detail →</a></p>
+					</div>
+ 
+				</div>	
+			</div>
+		</footer>
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- Footer End -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- Copyright Start -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<section id="copyright" class="at-padding-top at-padding-bottom bg-light">
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="span-8 col">
+							<small>Copyright © 2014 <a href="http://www.aristotheme.com">AristoTheme</a></small>
+						</div>
+						<div class="span-4 col">
+							<small class="at-float-right"><a href="javascript:void(0)" class="backtotop float">Back to Top <i class="fa fa-angle-up"></i></a></small>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- CopyrightEnd -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+	</div><!-- /st-container -->
+
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- Script Embed Start -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+		<script src="js/jquery.js"></script>
+
+		<!-- Main Slider -->
+		<script src="js/classie.js"></script>
+		<script src="js/main.slider.js"></script>
+
+		<!-- Parallax -->
+		<script src="js/appear.js"></script>
+		<script src="js/stellar.js"></script>
+
+		<!-- Latest News -->
+		<script src="js/masonry.min.js"></script>
+		<script src="js/imagesloaded.min.js"></script>
+		<script src="js/colorfinder.js"></script>
+		<script src="js/gridScrollFx.js"></script>
+		<script>
+			new GridScrollFx( document.getElementById( 'news-grid' ), {
+				viewportFactor : 0.4
+			} );
+		</script>
+
+		<!-- Testimonials -->
+		<script src="js/owl.carousel.min.js"></script>
+
+		<!-- Sidebar Menu -->
+		<script src="js/sidebarEffects.js"></script>
+
+		<!-- Login SignUp Form -->
+		<script src="js/login.js"></script>
+
+		<!-- Lightbox -->
+		<script src="js/jquery.magnific-popup.min.js"></script>
+
+		<!-- Loading -->
+		<script src="js/pace.min.js"></script>
+
+		<!-- Header Fixed -->
+		<script src="js/animatedHeader.min.js"></script>
+
+		<!-- Special Alabanda Scripts -->
+		<script src="js/script.js"></script>
+
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
